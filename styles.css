@@ -1,0 +1,236 @@
+/* Basic reset for the label and select elements */
+label, select {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the label */
+.theme-label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Styling for the select element */
+.theme-select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Add a box-shadow for a subtle 3D effect */
+.theme-select:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Add a custom arrow icon for the select element */
+.theme-select::-ms-expand {
+    display: none; /* Hide default arrow for IE */
+}
+
+.theme-select {
+    background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5H7z" fill="%23999"/%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 12px 8px;
+}
+
+/* Hide the switch container */
+.hidden-switch {
+    position: absolute;
+    left: -9999px; /* Move it off-screen */
+}
+
+/* Optionally hide the input itself (if needed) */
+.hidden-switch input {
+    display: none; /* Completely hide the checkbox */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* App Container */
+#app-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Settings Icon */
+#settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#settings-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Settings Options */
+#settings-options {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mode Buttons */
+#mode-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #e2e6ea, #c3cfe2);
+    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.mode-btn.active {
+    background: linear-gradient(145deg, #c3cfe2, #f5f7fa);
+    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff inset;
+}
+
+/* Calculator */
+#result {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #b1b5ba, inset -5px -5px 10px #ffffff;
+}
+
+#calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calc-btn {
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #e2e6ea, #c3cfe2);
+    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff; transition: background 0.3s, box-shadow 0.3s; }
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+
+.calc-btn:active {
+    box-shadow: inset 5px 5px 10px #b1b5ba, inset -5px -5px 10px #ffffff;
+}
+
+/* Currency Converter */
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+#currency-converter input,
+#currency-converter select,
+#currency-converter button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff;
+}
+
+#conversion-result {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Dark Mode and Themes */
+body.default {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+body.theme-light {
+    background: #FFFFE0;
+}
+
+body.theme-dark {
+    background: #FFE4E1;
+}
+body.theme-blue {
+    background: beige;
+}
+
+.default .calc-btn,
+.default .mode-btn {
+    background: linear-gradient(145deg, #e2e6ea, #c3cfe2);
+    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff;
+}
+
+.theme-light .calc-btn,
+.theme-light .mode-btn {
+    background: #4682B4;
+    color: white;
+}
+
+.theme-dark .calc-btn,
+.theme-dark .mode-btn {
+    background: #008B8B;
+    color: white;
+}
+.theme-blue .calc-btn,
+.theme-blue .mode-btn {
+    
+    background: #8FBC8F;
+    color: white
+} 

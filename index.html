@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add the Boxicons CDN for the cog icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="default">
+
+    <div id="app-container">
+        <div id="settings-icon">
+            <i class='bx bxs-cog'></i>
+        </div>
+        <div id="settings-options" class="hidden">
+            <label for="theme-select" class="theme-label">Theme:</label>
+            <select id="theme-select" class="theme-select">
+                <option value="default">Default</option>
+                <option value="theme-light">Theme 1</option>
+                <option value="theme-dark">Theme 2</option>
+                <option value="theme-blue">Theme 3</option>
+            </select>
+        </div>
+        <div class="hidden-switch">
+    <input type="checkbox" id="toggle-dark-mode">
+    <label for="toggle-dark-mode"></label>
+        </div>
+
+        <div id="mode-buttons">
+            <button id="calculator-mode" class="mode-btn active">Calculator</button>
+            <button id="converter-mode" class="mode-btn">Currency Converter</button>
+        </div>
+
+        <div id="calculator" class="panel active" class="blinking-cursor-container">
+            <input type="text" id="result" disabled>
+            <div id="calc-buttons">
+                <button class="calc-btn" data-value="7">7</button>
+                <button class="calc-btn" data-value="8">8</button>
+                <button class="calc-btn" data-value="9">9</button>
+                <button class="calc-btn" data-value="/">/</button>
+                <button class="calc-btn" data-value="4">4</button>
+                <button class="calc-btn" data-value="5">5</button>
+                <button class="calc-btn" data-value="6">6</button>
+                <button class="calc-btn" data-value="*">*</button>
+                <button class="calc-btn" data-value="1">1</button>
+                <button class="calc-btn" data-value="2">2</button>
+                <button class="calc-btn" data-value="3">3</button>
+                <button class="calc-btn" data-value="-">-</button>
+                <button class="calc-btn" data-value="0">0</button>
+                <button class="calc-btn" data-value=".">.</button>
+                <button class="calc-btn" data-value="=">=</button>
+                <button class="calc-btn" data-value="+">+</button>
+                <button class="calc-btn" data-value="AC">AC</button>
+                <button class="calc-btn" data-value="⌫">⌫</button>
+            </div>
+        </div>
+
+        <div id="currency-converter" class="panel">
+            <input type="number" id="currency-input" placeholder="Amount">
+            <select id="currency-from"></select>
+            <select id="currency-to"></select>
+            <button id="convert-btn">Convert</button>
+            <div id="conversion-result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
