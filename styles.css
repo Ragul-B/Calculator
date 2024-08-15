@@ -87,6 +87,7 @@ body {
 /* Settings Icon */
 #settings-icon {
     position: absolute;
+    font-size:10px
     top: 15px;
     right: 10px;
     transform: translateY(-50%);
