@@ -219,6 +219,7 @@ body.theme-blue {
 .default .mode-btn {
     background: linear-gradient(145deg, #333333, #666666);
     box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff;
+    color: white;
 }
 
 .theme-light .calc-btn,
