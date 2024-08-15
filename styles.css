@@ -164,7 +164,6 @@ body {
     border: none;
     cursor: pointer;
     background: linear-gradient(145deg, #e2e6ea, #c3cfe2);
-    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff; transition: background 0.3s, box-shadow 0.3s; }
     transition: background 0.3s, box-shadow 0.3s;
 }
 
@@ -218,8 +217,7 @@ body.theme-blue {
 .default .calc-btn,
 .default .mode-btn {
     background: linear-gradient(145deg, #333333, #666666);
-    box-shadow: 5px 5px 10px #b1b5ba, -5px -5px 10px #ffffff;
-    color: white;
+    
 }
 
 .theme-light .calc-btn,
