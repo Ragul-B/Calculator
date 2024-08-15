@@ -144,6 +144,7 @@ body {
     height: 100px;
     border: 2px solid black;
     background: #2D3B2D;
+    color: #A7C957;
     font-size: 23px;
     text-align: left;
     margin-bottom: 20px;
@@ -201,7 +202,7 @@ body {
 
 /* Dark Mode and Themes */
 body.default {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #333333, #666666);
 }
 body.theme-light {
     background: #FFFFE0;
